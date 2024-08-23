@@ -3,63 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>ChenFirstIce's Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
         }
 
         header {
-            background: #333;
+            background-image: url('https://wx1.sinaimg.cn/large/005OxMBSgy1hrt7y5dtcuj32by1b8b2d.jpg'); 
+            background-size: cover;
+            background-position: center;
             color: #fff;
-            padding: 10px 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
         nav {
+            background-color: #333;
+            padding: 10px;
             display: flex;
             justify-content: center;
-            background: #444;
-            padding: 10px;
         }
 
         nav a {
             color: #fff;
-            padding: 10px 15px;
+            padding: 14px 20px;
             text-decoration: none;
             text-transform: uppercase;
+            transition: background 0.3s;
         }
 
         nav a:hover {
-            background: #555;
+            background-color: #575757;
         }
 
         .container {
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
         }
 
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
         footer {
-            background: #333;
+            background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My GitHub Page</h1>
+        <h1>Welcome to ChenFirstIce's World</h1>
+        <p>Exploring the beauty of web development and more.</p>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="card">
+            <h2>Home</h2>
+            <p>Welcome to the homepage of ChenFirstIce's personal website. Here, you can find information about my projects, passions, and ways to connect with me.</p>
+        </section>
+
+        <section id="about" class="card">
+            <h2>About ChenFirstIce</h2>
+            <p>I'm ChenFirstIce, a passionate developer with a love for creating visually appealing and functional websites. My journey in web development has been a thrilling adventure, and I'm excited to share it with you.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <p>Explore some of my recent projects that showcase my skills and interests in web development, including responsive design, interactive features, and more.</p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email at: <a href="mailto:chenfirstice@example.com">chenfirstice@example.com</a>. I'm always open to discussing new ideas, collaborations, or just having a chat about tech!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ChenFirstIce. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
         <a href="#contact">Contact</a>
     </nav>
 
